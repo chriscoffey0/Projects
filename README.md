@@ -3,17 +3,13 @@ Martyr2’s Mega Project List
 
 Trying to complete all projects from [Martyr2’s Mega Project List](http://www.dreamincode.net/forums/topic/78802-martyr2s-mega-project-ideas-list/).
 
-#### Addendum -- July 14, 2013: This repo is in the top 5 on GitHub. (And again on [July 22, 2013](https://github.com/thekarangoel/Projects/blob/master/top5-2013-07-22%2013_10_30.png))
-
-![made it to top 5](https://github.com/thekarangoel/Projects/raw/master/top5.png)
-
 ===============================
 
 **Note**: If you fork this repo to solve these projects in any language of your choice, please remove all my code, and start from scratch; you'll benefit a lot. Do ***not*** send pull requests.
 
 Some details:
 
-* I will use Python to solve these. Why? Because I want to learn the language quickly.
+* I will use Ruby to solve these. Why? Because I want to learn the language quickly.
 * I have no interest in making games, so I'm excluding those from the list below.
 * I'm not interested in networking, so I *might* skip all (or some) of them.
 * The projects will not be made in the order posted.
