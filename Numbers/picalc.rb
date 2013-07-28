@@ -1,5 +1,5 @@
 #Ruby implementation of Spigot algorithm
-
+#returns digits of pi in a string
 def picalc(digits)
 	len = 10*digits/3+1
 
@@ -39,7 +39,7 @@ def picalc(digits)
 			pi_held.each {|x| pi_true += x.to_s}
 			pi_held = Array.new
 		end
-		pi_held << quot if quot < 10
+		#if quot is 10, rot and release held, otherwise add quot to held
 		if quot == 10
 			#increase all held digits by 1 (9 becomes 0)
 			pi_held.collect! {|x| (x+1)%10}
@@ -48,6 +48,8 @@ def picalc(digits)
 			pi_held = Array.new
 			#hold 0 as a predigit
 			pi_held << 0
+		else
+			pi_held << quot
 		end
 	end
 	#flush held to true for remaining digits
@@ -60,4 +62,8 @@ end
 print "Calc how many digits of Pi: "
 digits = gets.chomp.to_i
 
-puts "Pi to #{digits} digits: #{picalc(digits)}"
+if digits <= 2000
+	puts "Pi to #{digits} digits: #{picalc(digits)}"
+else
+	puts "This will take too much time! Try a smaller number."
+end
