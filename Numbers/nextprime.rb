@@ -1,16 +1,14 @@
 def get_next_prime(number)
 	is_prime = false
-	#start looking at the next number
-	number += 1
 	#keep searching till the next prime is found
 	while !is_prime
 		is_prime = true
+		#start looking at the next number
+		number += 1
 		#check to make sure number is only divisible by 1 and self
 		(2..(number-1)).each do |factor|
 			is_prime = false if number%factor == 0
 		end
-		#if this is not prime, check the next number
-		number += 1 if !is_prime
 	end
 	#prime found, so return it
 	return number
